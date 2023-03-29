@@ -9,24 +9,26 @@
         <link rel="stylesheet" href="./src/css/style.css" />
         <link rel="stylesheet" href="./src/css/responsive.css" />
     </head>
-    <body>
+    <body onscroll="testeScroll()">
         <header>
             <div class="container">
-                <img src="./src/img/logo.png" id="logo" alt="Logo" />
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                <div class="row align-items-center">
+                    <img src="./src/img/logo.png" class="logo" alt="Logo" />
+                    <div class="hamburger" onclick="teste()">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                 </div>
             </div>
         </header>
         <section class="home">
             <div class="container">
-                <div class="presentation">
-                    <h5>Olá</h5>
+                <div class="presentation justify-content-center">
+                    <h4>Olá</h4>
                     <h1>Sou o Carlos Silva</h1>
-                    <h4>Desenvolvedor Frontend</h4>
-                    <button>Sobre mim</button>
+                    <h3>Desenvolvedor Frontend</h3>
+                    <button class="btn">Sobre mim</button>
                 </div>
             </div>
         </section>
@@ -39,5 +41,20 @@
                 <li><a href="">Contato</a></li>
             </ul>
         </aside>
+
+        <script>
+            function testeScroll() {
+                console.log(window.scrollY);
+            }
+
+            function teste() {
+                let tagHeader = document.getElementsByTagName("header");
+                tagHeader[0].classList.add("headerMinimizado");
+                let logo = document.getElementsByClassName("logo");
+                logo[0].classList.add("logoMinimizada");
+                let hamburger = document.getElementsByClassName("hamburger");
+                hamburger[0].classList.add("hamburgerMinimizado");
+            }
+        </script>
     </body>
 </html>
