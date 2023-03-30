@@ -9,52 +9,85 @@
         <link rel="stylesheet" href="./src/css/style.css" />
         <link rel="stylesheet" href="./src/css/responsive.css" />
     </head>
-    <body onscroll="testeScroll()">
-        <header>
-            <div class="container">
-                <div class="row align-items-center">
-                    <img src="./src/img/logo.png" class="logo" alt="Logo" />
-                    <div class="hamburger" onclick="teste()">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
+    <body onscroll="controlSizeHeader()">
+        <div class="mother">
+            <header>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <img src="./src/img/logo.png" class="logo" alt="Logo" />
+                        <div class="hamburger" onclick="showMenu()">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <section class="home">
-            <div class="container">
-                <div class="presentation justify-content-center">
-                    <h4>Olá</h4>
-                    <h1>Sou o Carlos Silva</h1>
-                    <h3>Desenvolvedor Frontend</h3>
-                    <button class="btn">Sobre mim</button>
+            </header>
+
+            <aside class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </aside>
+
+            <section class="home">
+                <a name="home" class="anchor"></a>
+                <div class="container">
+                    <div class="presentation justify-content-center">
+                        <h4>Olá</h4>
+                        <h1>Sou o Carlos Silva</h1>
+                        <h3>Desenvolvedor Frontend</h3>
+                        <button
+                            class="btn"
+                            onclick="window.location.href = '#about'"
+                        >
+                            Sobre mim
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <aside>
-            <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre mim</a></li>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Contato</a></li>
-            </ul>
-        </aside>
+            </section>
 
-        <script>
-            function testeScroll() {
-                console.log(window.scrollY);
-            }
+            <section class="about">
+                <a name="about" class="anchor"></a>
+                <div class="container">
+                    <div class="row">
+                        <h1>Sobre mim</h1>
+                    </div>
+                </div>
+            </section>
 
-            function teste() {
-                let tagHeader = document.getElementsByTagName("header");
-                tagHeader[0].classList.add("headerMinimizado");
-                let logo = document.getElementsByClassName("logo");
-                logo[0].classList.add("logoMinimizada");
-                let hamburger = document.getElementsByClassName("hamburger");
-                hamburger[0].classList.add("hamburgerMinimizado");
-            }
-        </script>
+            <section class="skills">
+                <a name="skills" class="anchor"></a>
+                <div class="container">
+                    <div class="row">
+                        <h1>Habilidades</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects">
+                <a name="projects" class="anchor"></a>
+                <div class="container">
+                    <div class="row">
+                        <h1>Projetos</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <a name="contact" class="anchor"></a>
+                <div class="container">
+                    <div class="row">
+                        <h1>Contato</h1>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script src="/src/js/index.js"></script>
     </body>
 </html>
