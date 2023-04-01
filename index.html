@@ -11,18 +11,30 @@
     </head>
     <body onscroll="controlSizeHeader()">
         <div class="mother">
-            <header>
+            <header class="header" data-header="header">
                 <div class="container">
                     <div class="row align-items-center">
-                        <img src="./src/img/logo.png" class="logo" alt="Logo" />
-                        <div class="hamburger" onclick="showMenu()">
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
-                        </div>
+                        <img
+                            src="./src/img/logo.png"
+                            class="logo"
+                            alt="Logo"
+                            data-header="header"
+                        />
+                        <img
+                            src="/src/img/hamburger.svg"
+                            class="hamburger"
+                            onclick="showMenu()"
+                            data-header="header"
+                        />
                     </div>
                 </div>
             </header>
+            <img
+                src="/src/img/close.svg"
+                alt="Fechar menu"
+                class="close"
+                onclick="hideMenu()"
+            />
 
             <aside class="menu">
                 <ul>
@@ -33,6 +45,8 @@
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </aside>
+
+            <div class="lightbox" onclick="hideMenu()"></div>
 
             <section class="home">
                 <a name="home" class="anchor"></a>

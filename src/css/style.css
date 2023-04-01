@@ -1,67 +1,37 @@
-header {
+.header {
     width: 100%;
-    padding: 1.5rem 0;
-    background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.headerMinimizado {
-    background-color: var(--primary-color);
-    padding: 0.75rem 0;
-    animation: diminuirHeader 1s;
+    padding: 1.25rem 0;
+    background-color: transparent;
+    z-index: 70;
 }
 
 .logo {
-    height: 3rem;
+    height: 2.5rem;
     margin-right: auto;
 }
 
-.logoMinimizada {
-    height: 1.5rem;
-    animation: diminuirLogo 1s;
+.hamburger,
+.close {
+    width: 3rem;
+    margin-left: auto;
+    cursor: pointer;
+    transition: opacity 1s;
 }
 
 .hamburger {
-    width: 3rem;
-    height: 3rem;
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: all 1s;
+    filter: invert(1);
+    opacity: 1;
 }
 
-.show-menu .hamburger {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    transition: all 1s;
-}
-
-.hamburgerMinimizado {
-    width: 1.75rem;
-    height: 1.75rem;
-    padding: 0;
-    animation: diminuirHamburger 1s;
-}
-
-.line {
-    width: 100%;
-    height: 0.2rem;
-    background-color: #fff;
-    transition: all 0.5s;
-}
-
-.show-menu .line {
-    width: 80%;
-    background-color: #777;
-    transition: all 0.5s;
+.close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 100;
 }
 
 .menu {
@@ -71,12 +41,8 @@ header {
     top: 0;
     right: -12rem;
     background-color: #fff;
-    z-index: 999;
-    transition: all 0.5s;
-}
-
-.show-menu .menu {
-    right: 0;
+    z-index: 80;
+    transition: 0.5s;
 }
 
 .menu ul {
@@ -152,6 +118,13 @@ header {
     border-radius: 1.5rem;
     margin-top: 1.5rem;
     font-weight: 500;
+    cursor: pointer;
+    transition: all 700ms;
+}
+
+.presentation button:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
 }
 
 .about {
@@ -203,68 +176,36 @@ header {
 }
 
 /*--------------------- Animações ---------------------*/
-@keyframes diminuirHeader {
-    from {
-        background-color: transparent;
-        padding: 1.5rem 0;
-    }
-    to {
-        background-color: var(--primary-color);
-        padding: 0.75rem 0;
-    }
+[data-header],
+[data-menu] {
+    transition: 1s;
 }
 
-@keyframes diminuirLogo {
-    from {
-        height: 3rem;
-    }
-    to {
-        height: 1.5rem;
-    }
+[data-header].animate-header {
+    background-color: var(--primary-color);
+    padding: 0.25rem 0;
+    z-index: 90;
 }
 
-@keyframes diminuirHamburger {
-    from {
-        width: 3rem;
-        height: 3rem;
-        padding: 0.5rem;
-    }
-    to {
-        width: 1.75rem;
-        height: 1.75rem;
-        padding: 0;
-    }
+[data-header].animate-logo-header {
+    transform: scale(0.5);
 }
 
-@keyframes aumentarHeader {
-    from {
-        background-color: var(--primary-color);
-        padding: 0.75rem 0;
-    }
-    to {
-        background-color: transparent;
-        padding: 1.5rem 0;
-    }
+[data-header].animate-hamburger-header {
+    transform: scale(0.6);
+    padding: 0;
 }
 
-@keyframes aumentarLogo {
-    from {
-        height: 1.5rem;
-    }
-    to {
-        height: 3rem;
-    }
+.show-menu .hamburger {
+    position: relative;
+    right: -1000px;
+    opacity: 0;
 }
 
-@keyframes aumentarHamburger {
-    from {
-        width: 1.75rem;
-        height: 1.75rem;
-        padding: 0;
-    }
-    to {
-        width: 3rem;
-        height: 3rem;
-        padding: 0.5rem;
-    }
+.show-menu .close {
+    opacity: 1;
+}
+
+.show-menu .menu {
+    right: 0;
 }
