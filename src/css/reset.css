@@ -33,13 +33,14 @@ a {
     left: 0;
     background-color: #fff;
     opacity: 0;
-    transition: all 1s;
-    z-index: -1;
+    visibility: hidden;
+    z-index: 60;
+    transition: visibility 0, opacity 1s;
 }
 
 .lightbox.active-lightbox {
     opacity: 0.25;
-    z-index: 60;
+    visibility: visible;
 }
 
 .container {

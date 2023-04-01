@@ -8,41 +8,47 @@
         <link rel="stylesheet" href="./src/css/reset.css" />
         <link rel="stylesheet" href="./src/css/style.css" />
         <link rel="stylesheet" href="./src/css/responsive.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,1,0"
+        />
     </head>
     <body onscroll="controlSizeHeader()">
         <div class="mother">
             <header class="header" data-header="header">
                 <div class="container">
                     <div class="row align-items-center">
-                        <img
-                            src="./src/img/logo.png"
-                            class="logo"
-                            alt="Logo"
-                            data-header="header"
-                        />
-                        <img
-                            src="/src/img/hamburger.svg"
-                            class="hamburger"
+                        <a href="#home">
+                            <img
+                                src="./src/img/logo.png"
+                                class="logo"
+                                alt="Logo"
+                                data-header="header"
+                            />
+                        </a>
+                        <span
+                            class="material-symbols-rounded hamburger"
                             onclick="showMenu()"
                             data-header="header"
-                        />
+                        >
+                            menu
+                        </span>
                     </div>
                 </div>
             </header>
-            <img
-                src="/src/img/close.svg"
-                alt="Fechar menu"
-                class="close"
-                onclick="hideMenu()"
-            />
+            <span class="material-symbols-rounded close" onclick="hideMenu()">
+                close
+            </span>
 
             <aside class="menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li>
+                        <a href="#home" class="link-menu link-active">Home</a>
+                    </li>
+                    <li><a href="#about" class="link-menu">Sobre mim</a></li>
+                    <li><a href="#skills" class="link-menu">Habilidades</a></li>
+                    <li><a href="#projects" class="link-menu">Projetos</a></li>
+                    <li><a href="#contact" class="link-menu">Contato</a></li>
                 </ul>
             </aside>
 
@@ -69,7 +75,11 @@
                 <a name="about" class="anchor"></a>
                 <div class="container">
                     <div class="row">
-                        <h1>Sobre mim</h1>
+                        <img
+                            src="/src/img/Carlos.png"
+                            alt="Foto Carlos"
+                            class="image-about-carlos"
+                        />
                     </div>
                 </div>
             </section>
