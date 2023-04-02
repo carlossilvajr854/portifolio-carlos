@@ -164,9 +164,8 @@
 
 .about {
     width: 100%;
-    height: 100vh;
     background-color: var(--tertiary-color);
-    background-image: url(/src/img/shapes-background.png);
+    background-image: url(/src/img/shapes-background-about.png);
     background-size: cover;
 }
 
@@ -174,9 +173,32 @@
     top: 100vh;
 }
 
+.div-image-carlos,
+.div-about-carlos {
+    height: 100vh;
+    display: flex;
+}
+
+.div-image-carlos {
+    justify-content: start;
+    align-items: end;
+}
+
+.div-about-carlos {
+    justify-content: center;
+    align-items: center;
+}
+
 .image-about-carlos {
-    margin-right: auto;
-    height: 60vh;
+    width: 85%;
+}
+
+.about .card {
+    width: 70%;
+}
+
+.about .card .card-title {
+    font-size: 1.5rem;
 }
 
 .skills {
