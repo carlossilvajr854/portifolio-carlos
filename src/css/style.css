@@ -195,10 +195,57 @@
 
 .about .card {
     width: 70%;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.85);
 }
 
-.about .card .card-title {
+.about .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about .card-title {
+    text-align: center;
     font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.about .card-text {
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.65);
+    transition: all .5s;
+}
+
+.about .card-text.slide-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.buttons-slides-about {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-slide-about {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.button-slide-about.slide-selected {
+    background-color: var(--tertiary-color);
 }
 
 .skills {
