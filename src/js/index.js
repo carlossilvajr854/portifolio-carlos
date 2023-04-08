@@ -65,7 +65,7 @@ function createControlSlidesAbout() {
 
 function setSlideAbout(isClick) {
     pTextAbout.classList.toggle("slide-active", false);
-    
+
     setTimeout(() => {
         pTextAbout.innerHTML = textAbout[currentSlide];
         buttonSelected = document.querySelector(".slide-selected");
