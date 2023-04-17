@@ -269,9 +269,43 @@
     top: 200vh;
 }
 
+.skills .row {
+    justify-content: center;
+}
+
 .skills-languages {
-    width: 100%;
-    border: 1px solid red;
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 1.75rem;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.skills-languages .card {
+    min-width: 125px;
+    padding: 1rem;
+}
+
+.skills-languages .card .card-body {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.skills-languages .card img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.skills-languages .card .card-text {
+    text-align: center;
+    font-weight: 500;
 }
 
 .skills h1 {
