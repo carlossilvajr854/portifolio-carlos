@@ -12,6 +12,10 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,1,0"
         />
+        <script
+            src="https://kit.fontawesome.com/34e818e392.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body onscroll="controlSizeHeader()">
         <div class="mother">
@@ -53,6 +57,9 @@
             </aside>
 
             <div class="lightbox" onclick="hideMenu()"></div>
+            <div class="card modal-skills">
+                Texto
+            </div>
 
             <section class="home">
                 <a name="home" class="anchor"></a>
@@ -83,9 +90,9 @@
                             />
                         </div>
                         <div class="col-6 div-about-carlos">
+                            <h1 class="page-title">Sobre mim</h1>
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Sobre mim</h5>
                                     <p class="card-text" id="text-about"></p>
                                     <div class="buttons-slides-about"></div>
                                 </div>
@@ -102,7 +109,7 @@
                         <div class="skills-languages">
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="/src/img/html5.svg" alt="" />
+                                    <img src="/src/img/html5.svg" class="SVG" />
                                     <p class="card-text">HTML 5</p>
                                 </div>
                             </div>
@@ -120,32 +127,27 @@
                             </div>
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="/src/img/laravel.svg" alt="" />
-                                    <p class="card-text">Laravel</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="/src/img/vuejs.svg" alt="" />
-                                    <p class="card-text">Vue.JS</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
                                     <img src="/src/img/bootstrap.svg" alt="" />
                                     <p class="card-text">Bootstrap</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="/src/img/github.svg" alt="" />
-                                    <p class="card-text">GitHub</p>
+                                    <img src="/src/img/php.svg" alt="" />
+                                    <p class="card-text">PHP 7</p>
+                                </div>
+                            </div>
+                            <div
+                                class="card"
+                                onclick="openModalSkills()"
+                                title="Veja mais"
+                            >
+                                <div class="card-body">
+                                    <img src="/src/img/ellipsis.svg" />
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <h1>Habilidades</h1>
+                        <h1 class="page-title">Habilidades</h1>
                     </div>
                 </div>
             </section>

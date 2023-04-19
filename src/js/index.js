@@ -1,6 +1,7 @@
 const header = document.querySelectorAll("[data-header]");
 const divMother = document.querySelector(".mother");
 const lightbox = document.querySelector(".lightbox");
+const modalSkills = document.querySelector(".modal-skills");
 const linksMenu = document.querySelectorAll(".link-menu");
 const linkActive = document.querySelector(".link-active");
 const pTextAbout = document.getElementById("text-about");
@@ -13,6 +14,7 @@ let textAbout = [
 let buttonsSlideAbout, buttonSelected;
 let timeSlide = 10;
 let currentSlide = 0;
+let statusModal = false;
 
 function removeClass(element, nameClass) {
     element = document.querySelector("." + nameClass);
@@ -42,14 +44,27 @@ function controlSizeHeader() {
     header[2].classList.toggle("animate-hamburger-header", status);
 }
 
+function activateLightbox() {
+    lightbox.classList.toggle("active-lightbox", true);
+}
+
+function deactivateLightbox() {
+    if (statusModal) {
+        modalSkills.classList.toggle("active", false);
+        statusModal = false;
+    }
+
+    lightbox.classList.toggle("active-lightbox", false);
+}
+
 function showMenu() {
     divMother.classList.toggle("show-menu", true);
-    lightbox.classList.toggle("active-lightbox", true);
+    activateLightbox();
 }
 
 function hideMenu() {
     divMother.classList.toggle("show-menu", false);
-    lightbox.classList.toggle("active-lightbox", false);
+    deactivateLightbox();
 }
 
 function createControlSlidesAbout() {
@@ -118,3 +133,9 @@ function createSlidesAbout() {
 }
 
 createSlidesAbout();
+
+function openModalSkills() {
+    statusModal = true;
+    modalSkills.classList.toggle("active", true);
+    activateLightbox();
+}
