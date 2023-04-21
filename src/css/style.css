@@ -350,23 +350,16 @@
     opacity: 0.8;
 }
 
-.modal-skills {
-    width: 50%;
-    height: 75vh;
-    position: absolute;
-    top: 212.5vh;
-    left: 25%;
-    margin: 0 auto;
-    z-index: 100;
-    visibility: hidden;
-    opacity: 0;
-    transition: 700ms;
-}
+/* .modal-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+} */
 
-.modal-skills.active {
-    visibility: visible;
-    opacity: 1;
-}
+/* .modal-skills .card {
+    width: 30%;
+} */
 
 .projects {
     width: 100%;
