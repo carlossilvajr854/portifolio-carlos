@@ -12,6 +12,11 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,1,0"
         />
+        <link
+            rel="shortcut icon"
+            href="/src/img/favicon.png"
+            type="image/x-icon"
+        />
         <script
             src="https://kit.fontawesome.com/34e818e392.js"
             crossorigin="anonymous"
@@ -40,7 +45,10 @@
                     </div>
                 </div>
             </header>
-            <span class="material-symbols-rounded close" onclick="hideMenu()">
+            <span
+                class="material-symbols-rounded close close-menu"
+                onclick="hideMenu()"
+            >
                 close
             </span>
 
@@ -57,67 +65,113 @@
             </aside>
 
             <div class="lightbox" onclick="hideMenu()"></div>
-            <div class="modal">
+            <div class="modal" onclick="deactivateLightbox()">
                 <div class="modal-dialog modal-skills">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/src/img/html5.svg" class="SVG" />
-                            <p class="card-text">HTML 5</p>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Linguagens, Softwares e Habilidades</h5>
+                        <span
+                            class="material-symbols-rounded close"
+                            onclick="deactivateLightbox()"
+                        >
+                            close
+                        </span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/bootstrap.svg" />
+                                <p class="card-text">Bootstrap</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/wordpress.svg" />
+                                <p class="card-text">Wordpress</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/jquery.svg" />
+                                <p class="card-text">jQuery</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/laravel.svg" />
+                                <p class="card-text">Laravel</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/vuejs.svg" />
+                                <p class="card-text">Vue.JS</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/ajax.svg" />
+                                <p class="card-text">Ajax</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/git.svg" />
+                                <p class="card-text">Git</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/github.svg" />
+                                <p class="card-text">GitHub</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/json.svg" />
+                                <p class="card-text">Json</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/scrum.svg" />
+                                <p class="card-text">Metodologia Ágil Scrum</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/kanban.svg" />
+                                <p class="card-text">Kanban</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/sql-server.svg" />
+                                <p class="card-text">Microsoft SQL Server</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/photoshop.svg" />
+                                <p class="card-text">Adobe Photoshop</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/illustrator.svg" />
+                                <p class="card-text">Adobe Illustrator</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/coreldraw.svg" />
+                                <p class="card-text">CorelDRAW</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/src/img/css3.svg" alt="" />
-                            <p class="card-text">CSS 3</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/src/img/js.svg" alt="" />
-                            <p class="card-text">JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/src/img/bootstrap.svg" alt="" />
-                            <p class="card-text">Bootstrap</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/src/img/php.svg" alt="" />
-                            <p class="card-text">PHP 7</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/src/img/html5.svg" class="SVG" />
-                            <p class="card-text">HTML 5</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/src/img/css3.svg" alt="" />
-                            <p class="card-text">CSS 3</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/src/img/js.svg" alt="" />
-                            <p class="card-text">JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/src/img/bootstrap.svg" alt="" />
-                            <p class="card-text">Bootstrap</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/src/img/php.svg" alt="" />
-                            <p class="card-text">PHP 7</p>
-                        </div>
+                    <div class="modal-footer">
+                        <button class="btn" onclick="deactivateLightbox()">
+                            Fechar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -188,14 +242,14 @@
                             </div>
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="/src/img/bootstrap.svg" alt="" />
-                                    <p class="card-text">Bootstrap</p>
+                                    <img src="/src/img/php.svg" alt="" />
+                                    <p class="card-text">PHP 7</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="/src/img/php.svg" alt="" />
-                                    <p class="card-text">PHP 7</p>
+                                    <img src="/src/img/mysql.svg" alt="" />
+                                    <p class="card-text">My SQL</p>
                                 </div>
                             </div>
                             <div

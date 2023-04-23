@@ -1,3 +1,4 @@
+const body = document.getElementsByTagName("body");
 const header = document.querySelectorAll("[data-header]");
 const divMother = document.querySelector(".mother");
 const lightbox = document.querySelector(".lightbox");
@@ -46,6 +47,7 @@ function controlSizeHeader() {
 
 function activateLightbox() {
     lightbox.classList.toggle("active-lightbox", true);
+    body[0].classList.toggle("block-scroll", true);
 }
 
 function deactivateLightbox() {
@@ -55,6 +57,7 @@ function deactivateLightbox() {
     }
 
     lightbox.classList.toggle("active-lightbox", false);
+    body[0].classList.toggle("block-scroll", false);
 }
 
 function showMenu() {
