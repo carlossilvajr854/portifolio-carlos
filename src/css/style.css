@@ -386,7 +386,7 @@
 .projects {
     width: 100%;
     height: 100vh;
-    background-image: url(../img/bg-projects02.jpg);
+    background-image: url(../img/bg-projects.jpg);
     background-size: cover;
 }
 
@@ -395,12 +395,7 @@
 }
 
 .my-projects {
-    width: 80%;
-    height: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 1.75rem;
-    padding-bottom: 1rem;
+    padding: 0.5rem;
     border: 1px solid red;
 }
 
