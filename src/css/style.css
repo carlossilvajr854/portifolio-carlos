@@ -1,7 +1,3 @@
-.block-scroll {
-    overflow: hidden;
-}
-
 .header {
     width: 100%;
     position: fixed;
@@ -111,7 +107,7 @@
 .home {
     width: 100%;
     height: 100vh;
-    background-image: url(/src/img/bg-home01.jpg);
+    background-image: url(../img/bg-home01.jpg);
     background-size: cover;
     background-position-y: bottom;
     padding-top: 40vh;
@@ -169,7 +165,7 @@
 .about {
     width: 100%;
     background-color: var(--tertiary-color);
-    background-image: url(/src/img/shapes-background-about.png);
+    background-image: url(../img/shapes-background-about.png);
     background-size: cover;
 }
 
@@ -266,7 +262,7 @@
 
 .skills::after {
     content: "";
-    background-image: url(/src/img/bg-skills.png);
+    background-image: url(../img/bg-skills.png);
     background-size: cover;
     opacity: 0.07;
     position: absolute;
@@ -353,7 +349,6 @@
 }
 
 .skills .page-title {
-    width: 14rem;
     border-color: #fff;
     color: #fff;
     opacity: 1;
@@ -379,25 +374,34 @@
 }
 
 .modal-skills .modal-footer .btn {
-    background-color: #0d6efd;
+    background-color: #777;
     color: #fff;
 }
 
 .modal-skills .modal-footer .btn:hover {
-    background-color: #0b5ed7;
+    background-color: #999;
     cursor: pointer;
 }
 
 .projects {
     width: 100%;
     height: 100vh;
-    background-image: url(/src/img/bg-home04.jpg);
+    background-image: url(../img/bg-projects02.jpg);
     background-size: cover;
-    border: 1px solid green;
 }
 
 .projects .anchor {
     top: 300vh;
+}
+
+.my-projects {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.75rem;
+    padding-bottom: 1rem;
+    border: 1px solid red;
 }
 
 .contact {
