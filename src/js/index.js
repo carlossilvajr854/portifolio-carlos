@@ -15,6 +15,7 @@ let buttonsSlideAbout, buttonSelected;
 let timeSlide = 10;
 let currentSlide = 0;
 let statusModal = false;
+let currentProjectSlider = 0;
 
 function removeClass(element, nameClass) {
     element = document.querySelector("." + nameClass);
