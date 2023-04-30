@@ -2,6 +2,7 @@ const header = document.querySelectorAll("[data-header]");
 const divMother = document.querySelector(".mother");
 const lightbox = document.querySelector(".lightbox");
 const modalSkills = document.querySelector(".modal");
+const firstProject = document.querySelector(".my-projects .first");
 const linksMenu = document.querySelectorAll(".link-menu");
 const linkActive = document.querySelector(".link-active");
 const pTextAbout = document.getElementById("text-about");
@@ -15,6 +16,7 @@ let buttonsSlideAbout, buttonSelected;
 let timeSlide = 10;
 let currentSlide = 0;
 let statusModal = false;
+let amountProjects = ;
 let currentProjectSlider = 0;
 
 function removeClass(element, nameClass) {
@@ -139,4 +141,12 @@ function openModalSkills() {
     statusModal = true;
     modalSkills.classList.toggle("active", true);
     activateLightbox();
+}
+
+function nextProject() {
+    alert("Próximo slide");
+}
+
+function previousProject() {
+    alert("Slide anterior");
 }
