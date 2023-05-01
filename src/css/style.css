@@ -426,12 +426,7 @@
     justify-content: space-between;
 }
 
-.my-projects .carousel-slides {
-    width: 400%;
-}
-
-.my-projects .first {
-    margin-left: 0;
+.my-projects #first-project {
     transition: 1s;
 }
 
@@ -464,7 +459,7 @@
 .contact {
     width: 100%;
     height: 100vh;
-    background-image: url(/src/img/bg-home05.jpg);
+    background-image: url(/src/img/bg-projects01.jpg);
     background-size: cover;
     border: 1px solid grey;
 }

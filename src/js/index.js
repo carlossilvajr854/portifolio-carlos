@@ -2,7 +2,7 @@ const header = document.querySelectorAll("[data-header]");
 const divMother = document.querySelector(".mother");
 const lightbox = document.querySelector(".lightbox");
 const modalSkills = document.querySelector(".modal");
-const firstProject = document.querySelector(".my-projects .first");
+const firstProject = document.querySelector("#first-project");
 const linksMenu = document.querySelectorAll(".link-menu");
 const linkActive = document.querySelector(".link-active");
 const pTextAbout = document.getElementById("text-about");
@@ -16,8 +16,11 @@ let buttonsSlideAbout, buttonSelected;
 let timeSlide = 10;
 let currentSlide = 0;
 let statusModal = false;
-let amountProjects = ;
-let currentProjectSlider = 0;
+let amountProjects = document.querySelectorAll(
+    ".my-projects .carousel-item"
+).length;
+let currentProjectSlide = 0;
+let currentMarginFirstProject = currentProjectSlide * sizeItemProject();
 
 function removeClass(element, nameClass) {
     element = document.querySelector("." + nameClass);
@@ -143,10 +146,47 @@ function openModalSkills() {
     activateLightbox();
 }
 
+function sizeItemProject() {
+    return 100 / amountProjects;
+}
+
+function setSizeSliderProjects() {
+    document.getElementById("carousel-slides-projects").style.width =
+        amountProjects * 100 + "%";
+
+    let carouselItems = document.querySelectorAll(".carousel-item");
+
+    carouselItems.forEach((item) => {
+        item.style.width = sizeItemProject() + "%";
+    });
+}
+
+console.log(currentProjectSlide);
 function nextProject() {
-    alert("Próximo slide");
+    currentProjectSlide++;
+    if (currentProjectSlide < amountProjects) {
+        currentMarginFirstProject -= sizeItemProject();
+        firstProject.style.marginLeft = currentMarginFirstProject + "%";
+    } else {
+        currentMarginFirstProject = 0;
+        firstProject.style.marginLeft = currentMarginFirstProject;
+        currentProjectSlide = 0
+    }
 }
 
 function previousProject() {
-    alert("Slide anterior");
+    if (currentProjectSlide > 0) {
+        currentMarginFirstProject += sizeItemProject();
+        firstProject.style.marginLeft = currentMarginFirstProject + "%";
+        currentProjectSlide--;
+    } else {
+        currentMarginFirstProject = -100 + sizeItemProject() + "%";
+        firstProject.style.marginLeft = currentMarginFirstProject;
+        currentProjectSlide = amountProjects-1;
+    }
+    
+    console.log(currentMarginFirstProject);
+    console.log(currentProjectSlide);
 }
+
+setSizeSliderProjects();
