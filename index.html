@@ -28,7 +28,7 @@
             crossorigin="anonymous"
         ></script>
     </head>
-    <body onscroll="controlSizeHeader()">
+    <body onscroll="ajustaNavbar()">
         <div class="mother">
             <nav class="navbar fixed-top">
                 <div class="container">
@@ -105,8 +105,9 @@
                     </div>
                 </div>
             </nav>
+
             <section class="home">
-                <a name="home" class="anchor"></a>
+                <a name="home" class="ancora"></a>
                 <div class="container">
                     <div class="row">
                         <div
@@ -125,14 +126,14 @@
                     </div>
                 </div>
             </section>
+
             <section class="sobre-mim">
-                <a name="sobre-mim" class="anchor"></a>
+                <a name="sobre-mim" class="ancora"></a>
                 <div class="container">
                     <div class="row">
                         <div
                             class="col-6 vh-100 d-flex flex-column align-items-center justify-content-end position-relative"
                         >
-                            <h1 class="titulo-pagina">Sobre mim</h1>
                             <img
                                 src="./src/img/Carlos.png"
                                 alt="Foto Carlos"
@@ -142,23 +143,197 @@
                         <div
                             class="col-6 vh-100 d-flex flex-column justify-content-center"
                         >
-                            <div class="card mx-auto">
+                            <div id="carouselIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselIndicators"
+                                        data-bs-slide-to="0"
+                                        class="active"
+                                        aria-current="true"
+                                        aria-label="Slide 1"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselIndicators"
+                                        data-bs-slide-to="1"
+                                        aria-label="Slide 2"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselIndicators"
+                                        data-bs-slide-to="2"
+                                        aria-label="Slide 3"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselIndicators"
+                                        data-bs-slide-to="3"
+                                        aria-label="Slide 4"
+                                    ></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card mx-auto">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    Sobre mim
+                                                </h5>
+                                                <p class="card-text">
+                                                    Olá! Me chamo Carlos Silva e
+                                                    sou Desenvolvedor Frontend!
+                                                    Sou apaixonado por
+                                                    tecnologia, e acredito que
+                                                    através dela podemos
+                                                    contribuir para um mundo
+                                                    melhor, resolvendo os mais
+                                                    diversos problemas, desde os
+                                                    mais simples até os mais
+                                                    complexos.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card mx-auto">
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Sou um profissional proativo
+                                                    e dinâmico, amo novos
+                                                    desafios, principalmente os
+                                                    que exigem que eu me torne
+                                                    melhor para resolvê-los,
+                                                    estou sempre fazendo novos
+                                                    cursos, buscando me
+                                                    atualizar e aprimorar meus
+                                                    conhecimentos em
+                                                    Desenvolvimento de Softwares
+                                                    para melhorar minha
+                                                    performance e produtividade.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card mx-auto">
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Sou muito dedicado,
+                                                    esforçado e comprometido com
+                                                    minhas obrigações, tenho
+                                                    facilidade em aprender tudo
+                                                    o que me proponho, e me
+                                                    adapto rapidamente a novas
+                                                    tarefas, funções e
+                                                    tecnologias. Gosto de
+                                                    trabalhar em equipe e sempre
+                                                    que possível, gosto de
+                                                    ajudar pessoas do time em
+                                                    algo que tenho mais
+                                                    experiência que elas. Por
+                                                    isso, tenho certeza que
+                                                    posso contribuir em qualquer
+                                                    time com as minhas
+                                                    habilidades.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card mx-auto">
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Sou apaixonado por música,
+                                                    amo tocar violão e cantar,
+                                                    curto programas mais
+                                                    caseiros com minha família,
+                                                    como assistir filmes e
+                                                    séries com minha esposa e
+                                                    meus filhos.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="carousel-control-prev"
+                                    type="button"
+                                    data-bs-target="#carouselIndicators"
+                                    data-bs-slide="prev"
+                                >
+                                    <span
+                                        class="carousel-control-prev-icon"
+                                        aria-hidden="true"
+                                    ></span>
+                                    <span class="visually-hidden"
+                                        >Previous</span
+                                    >
+                                </button>
+                                <button
+                                    class="carousel-control-next"
+                                    type="button"
+                                    data-bs-target="#carouselIndicators"
+                                    data-bs-slide="next"
+                                >
+                                    <span
+                                        class="carousel-control-next-icon"
+                                        aria-hidden="true"
+                                    ></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="habilidades">
+                <a name="habilidades" class="ancora"></a>
+                <div class="container">
+                    <div
+                        class="row vh-100 d-flex justify-content-center align-items-center"
+                    >
+                        <div class="linguagens">
+                            <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <h6
-                                        class="card-subtitle mb-2 text-body-secondary"
-                                    >
-                                        Card subtitle
-                                    </h6>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link"
-                                        >Another link</a
-                                    >
+                                    <img
+                                        src="./src/img/html5.svg"
+                                        class="SVG"
+                                    />
+                                    <p class="card-text">HTML 5</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./src/img/css3.svg" alt="" />
+                                    <p class="card-text">CSS 3</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./src/img/js.svg" alt="" />
+                                    <p class="card-text">JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./src/img/php.svg" alt="" />
+                                    <p class="card-text">PHP 7</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./src/img/mysql.svg" alt="" />
+                                    <p class="card-text">My SQL</p>
+                                </div>
+                            </div>
+                            <div
+                                class="card"
+                                onclick="openModalSkills()"
+                                title="Veja mais"
+                            >
+                                <div class="card-body">
+                                    <img src="./src/img/ellipsis.svg" />
                                 </div>
                             </div>
                         </div>
