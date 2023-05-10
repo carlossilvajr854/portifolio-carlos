@@ -30,7 +30,7 @@
     </head>
     <body onscroll="controlSizeHeader()">
         <div class="mother">
-            <nav class="navbar py-3 fixed-top">
+            <nav class="navbar fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="#home">
                         <img
@@ -40,12 +40,131 @@
                         />
                     </a>
                     <span
-                        class="material-symbols-rounded hamburger-menu transition-all"
+                        class="navbar-toggler material-symbols-rounded hamburger-menu transition-all border-0"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                        aria-label="Toggle Navbar"
                     >
                         menu
                     </span>
+                    <div
+                        class="offcanvas offcanvas-end menu"
+                        tabindex="-1"
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <h5
+                                class="offcanvas-title"
+                                id="offcanvasNavbarLabel"
+                            >
+                                Portifólio Carlos
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul
+                                class="navbar-nav justify-content-end flex-grow-1"
+                            >
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#home"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sobre-mim"
+                                        >Sobre mim</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#habilidades"
+                                        >Habilidades</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#projetos"
+                                        >Projetos</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contato"
+                                        >Contato</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
+            <section class="home">
+                <a name="home" class="anchor"></a>
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-6 vh-100 text-light d-flex flex-column justify-content-center"
+                        >
+                            <h4>Olá</h4>
+                            <h1>Sou o Carlos Silva</h1>
+                            <h3>Desenvolvedor Frontend</h3>
+                            <button
+                                class="btn btn-cs btn-cs-secondary mt-3"
+                                onclick="window.location.href = '#sobre-mim'"
+                            >
+                                Sobre mim
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sobre-mim">
+                <a name="sobre-mim" class="anchor"></a>
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-6 vh-100 d-flex flex-column align-items-center justify-content-end position-relative"
+                        >
+                            <h1 class="titulo-pagina">Sobre mim</h1>
+                            <img
+                                src="./src/img/Carlos.png"
+                                alt="Foto Carlos"
+                                class="h-75"
+                            />
+                        </div>
+                        <div
+                            class="col-6 vh-100 d-flex flex-column justify-content-center"
+                        >
+                            <div class="card mx-auto">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h6
+                                        class="card-subtitle mb-2 text-body-secondary"
+                                    >
+                                        Card subtitle
+                                    </h6>
+                                    <p class="card-text">
+                                        Some quick example text to build on the
+                                        card title and make up the bulk of the
+                                        card's content.
+                                    </p>
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link"
+                                        >Another link</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <script src="./src/js/index.js"></script>

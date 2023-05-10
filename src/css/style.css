@@ -1,10 +1,41 @@
+.bg-cs-primary {
+    background-color: var(--cs-primary);
+}
+
+.bg-cs-secondary {
+    background-color: var(--cs-secondary);
+}
+
 .transition-all {
     transition: all 0.5s;
 }
 
-.navbar {
+.anchor {
+    position: absolute;
+}
+
+.btn-cs {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5rem;
+    transition: all 0.75s;
+}
+
+.btn-cs-primary {
     background-color: var(--cs-primary);
-    border: 1px solid yellow;
+    border-color: var(--cs-primary) !important;
+}
+
+.btn-cs-secondary {
+    background-color: var(--cs-secondary);
+    border-color: var(--cs-secondary) !important;
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+    transition: all 0.5s;
 }
 
 .logo {
@@ -12,7 +43,7 @@
 }
 
 .hamburger-menu {
-    font-size: 2.5rem !important;
+    font-size: 2.75rem !important;
     color: var(--bs-white);
 }
 
@@ -24,4 +55,114 @@
 
 .hamburger-menu:hover {
     color: var(--cs-secondary);
+}
+
+.navbar-retract {
+    padding: 0;
+    background-color: var(--cs-primary);
+}
+
+.navbar-retract .logo,
+.navbar-retract .hamburger-menu {
+    transform: scale(0.75);
+}
+
+.menu {
+    --bs-offcanvas-width: 16.5rem;
+}
+
+.menu .offcanvas-title {
+    cursor: default;
+}
+
+.menu .nav-link {
+    padding-left: 0.4rem;
+    color: var(--bs-gray-600);
+    border-bottom: 1px solid var(--bs-gray-400);
+    transition: all 0.5s;
+}
+
+.menu .nav-item:nth-child(5) .nav-link {
+    border: 0;
+}
+
+.menu .nav-link:hover {
+    color: var(--cs-primary);
+    background-color: var(--bs-gray-300);
+}
+
+.menu .nav-link.active {
+    font-weight: 500;
+    color: var(--bs-white);
+    background-color: var(--cs-primary);
+}
+
+.menu .nav-link.active:hover {
+    cursor: default;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg-home.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.home .anchor {
+    top: 0;
+}
+
+.home h1 {
+    font-size: 2.75rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.home h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--cs-secondary);
+}
+
+.home h4 {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.home .btn {
+    width: 8rem;
+    font-weight: 500;
+}
+
+.titulo-pagina {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    max-width: 250px;
+    padding-right: 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--bs-white);
+    border-bottom: 2px solid var(--bs-gray-200);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.sobre-mim {
+    width: 100%;
+    background-color: var(--cs-secondary);
+    background-image: url(../img/shapes-background-about.png);
+    background-size: cover;
+}
+
+.sobre-mim .anchor {
+    top: 100vh;
+}
+
+.sobre-mim .card {
+    width: 70%;
+}
+
+.sobre-mim .col-6 {
+    border: 1px solid red;
 }
