@@ -67,6 +67,11 @@
     transform: scale(0.75);
 }
 
+.navbar-retract .logo:hover,
+.navbar-retract .hamburger-menu:hover {
+    transform: scale(0.82);
+}
+
 .menu {
     --bs-offcanvas-width: 16.5rem;
 }
@@ -252,7 +257,12 @@
     padding: 0;
 }
 
+.modal-skills .card {
+    background-color: transparent;
+    border-radius: 0;
+}
+
 .linguagens .card img {
-    width: 75%;
+    width: 75px;
     margin: auto;
 }

@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z" fill="#00105c" /></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="595.279px" height="841.89px" viewBox="0 0 595.279 841.89" enable-background="new 0 0 595.279 841.89"
+	 xml:space="preserve">
+<path fill="#00105C" d="M159.772,420.945c0-19.741,16.003-35.744,35.744-35.744s35.744,16.003,35.744,35.744
+	c0,19.74-16.003,35.744-35.744,35.744S159.772,440.685,159.772,420.945z M261.896,420.945c0-19.741,16.003-35.744,35.744-35.744
+	c19.74,0,35.743,16.003,35.743,35.744c0,19.74-16.003,35.744-35.743,35.744C277.899,456.689,261.896,440.685,261.896,420.945z
+	 M399.764,385.202c19.741,0,35.743,16.003,35.743,35.744c0,19.74-16.002,35.744-35.743,35.744c-19.74,0-35.743-16.004-35.743-35.744
+	C364.021,401.205,380.024,385.202,399.764,385.202z"/>
+</svg>
